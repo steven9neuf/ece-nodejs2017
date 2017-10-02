@@ -1,0 +1,11 @@
+{
+	"name": "ast project 2017",
+	"description": "simple project for ECE Paris",
+	"version": "0.0.1",
+	"dependencies": {
+		"body-parser": "^1.15.2"
+	},
+	"devDevpencies": {},
+	"main": "./index.js",
+	
+}
