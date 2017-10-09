@@ -9,15 +9,19 @@ describe('user', function(){
 		})
 	})
 
+	// We send only 2 parameters instead of 3. We expect to get an error
 	it('doesn\'t save because missing parameter', function(done){
-		user.save("name", "pwd", function(err){
-			should.not.exist(err)
+		user.save("only name", function(err){
+			should.exist(err)
 			done()
 		})
 	})
 
 	it('get', function(done){
-		done()
+		user.get("Steven", function(err){
+			should.not.exist(err)
+			done()
+		})
 	})
 
 })
