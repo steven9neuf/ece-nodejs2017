@@ -10,8 +10,8 @@ describe('user', function(){
 	})
 
 	it('doesn\'t save because missing parameter', function(done){
-		user.save("only name", function(err){
-			should.exist(err)
+		user.save("name", "pwd", function(err){
+			should.not.exist(err)
 			done()
 		})
 	})
