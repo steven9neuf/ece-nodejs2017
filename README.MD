@@ -8,6 +8,8 @@ Clone the repository from github
 
 ## RUN
 
-In your terminal, inside the current directory, run `node index.js`
+In your terminal, inside the current directory, run `./bin/start`
 
 ## TEST
+
+In your terminal, inside the current directory, run `./bin/test`
