@@ -1,0 +1,43 @@
+#!/bin/bash
+
+set -e
+
+compileCoffee() {
+	echo "Compiling Coffee file"
+	./node_modules/.bin/coffee --compile --output lib src
+}
+
+compilePug(){
+	echo "Compiling Pug file"
+	./node_modules/.bin/pug views --out public/html --pretty
+}
+
+compileStylus(){
+	echo "Compiling Stylus file"
+	echo "nothing to do"
+}
+
+
+main(){
+	case $1 in
+		coffee)
+			compileCoffee
+		;;
+		pug)
+			compilePug
+		;;
+		stylus)
+			compileStylus
+		;;
+		*)
+				compileCoffee
+				compilePug
+				compileStylus
+		;;
+	esac
+	echo "Done"
+}
+
+main
+
+

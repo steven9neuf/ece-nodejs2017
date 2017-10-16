@@ -3,13 +3,19 @@
   "description": "simple project for ECE Paris",
   "version": "0.0.1",
   "scripts": {
-  	"start": "./bin/start",
-  	"test": "./bin/test tests/*"
+    "start": "./bin/start",
+    "test": "./bin/test",
+    "compile": "./bin/compile"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "coffe-script": "0.0.1-security",
+    "coffee-script": "^1.12.7",
     "mocha": "^4.0.1",
-    "should": "^13.1.1"
+    "pug": "^2.0.0-rc.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "should": "^13.1.1",
+    "stylus": "^0.54.5"
   },
   "devDevpencies": {}
 }
